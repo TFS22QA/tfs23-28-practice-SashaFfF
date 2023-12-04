@@ -16,10 +16,10 @@ services:
   service:
     image: anshemonaev/fsi:latest
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/example_db
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/example_db
       SPRING_DATASOURCE_USERNAME: userdb
       SPRING_DATASOURCE_PASSWORD: passworddb
     ports:
-      - "8080:80"
+      - "8080:8080"
     depends_on:
       - postgres
